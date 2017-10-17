@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Slack Emoji Downloader",
+    "description": "",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://*.slack.com/customize/emoji"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs", "https://*.slack.com/customize/emoji"
+    ]
+}
